@@ -58,7 +58,8 @@ local function ensureAnimDict(animDict)
     return animDict
 end
 
-if IsControlPressed(0, Config.Tus)
+if Config.Tusla = true
+if IsControlPressed(0, Config.TusType)
 	if not carry.InProgress then
 		local closestPlayer = GetClosestPlayer(3)
 		if closestPlayer then
@@ -83,6 +84,9 @@ if IsControlPressed(0, Config.Tus)
 		carry.targetSrc = 0
 	end
 end,false)
+
+if Config.Komutla = true
+RegisterCommand(Config.Komut,function(source, args)
 
 RegisterNetEvent("CarryPeople:syncTarget")
 AddEventHandler("CarryPeople:syncTarget", function(targetSrc)
